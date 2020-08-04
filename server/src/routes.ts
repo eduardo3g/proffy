@@ -9,5 +9,6 @@ routes.get('/healthcheck', (request, response) => {
 });
 
 routes.post('/classes', classesController.create);
+routes.get('/classes', classesController.index);
 
 export default routes;
