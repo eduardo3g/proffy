@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 
-const PageHeader: React.FC = () => {
+interface PageHeaderProps {
+  title: string;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">
@@ -15,7 +19,7 @@ const PageHeader: React.FC = () => {
       </div>
 
       <div className="header-content">
-        <strong>Estes são os proffys disponíveis.</strong>
+        <strong>{title}</strong>
       </div>
     </header>
   );
