@@ -14,7 +14,7 @@ export default class ClassesController {
     const filters = request.query;
 
     const subject = filters.subject as string;
-    const weekday = filters.week_day as string;
+    const week_day = filters.week_day as string;
     const time = filters.time as string;
 
     if (!filters.week_day || !filters.subject || !filters.time) {
@@ -26,6 +26,14 @@ export default class ClassesController {
     const timeInMinutes = convertHourToMinutes(time);
 
     const classes = await db('classes')
+      .whereExists(function() {
+        this.select('class_schedules.*')
+          .from('class_schedules')
+          .whereRaw('`class_schedules`.`class_id` = `classes`.`id`')
+          .whereRaw('`class_schedules`.`week_day` = ??', [Number(week_day)])
+          .whereRaw('`class_schedules`.`from` <= ??', [timeInMinutes])
+          .whereRaw('`class_schedules`.`to` > ??', [timeInMinutes])
+      })
       .where('classes.subject', '=', subject)
       .join('users', 'classes.user_id', '=', 'users.id')
       .select(['classes.*', 'users.*']);
