@@ -12,7 +12,7 @@ import './styles.css';
 const Landing: React.FC = () => {
   return (
     <div id="page-landing">
-      <div id="page-anding-content" className="container">
+      <div id="page-landing-content" className="container">
         <div className="logo-container">
           <img src={logoImg} alt="Proffy"/>
           <h2>Sua plataforma de estudos online.</h2>
@@ -32,7 +32,7 @@ const Landing: React.FC = () => {
 
           <a href="" className="give-classes">
             <img src={giveClassesIcon} alt="Dar aulas"/>
-            Dar aula
+            Dar aulas
           </a>
         </div>
 
