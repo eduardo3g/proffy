@@ -95,10 +95,6 @@ const TeacherList: React.FC = () => {
             return <TeacherItem key={teacher.id} teacher={teacher} />
           })
         ) : <h2>Nenhum professor encontrado com sua pesquisa.</h2>}
-
-        {teachers.map((teacher: Teacher) => {
-          return <TeacherItem key={teacher.id} teacher={teacher} />
-        })}
       </main>
     </div>
   );
