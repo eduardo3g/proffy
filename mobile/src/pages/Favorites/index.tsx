@@ -8,7 +8,7 @@ import styles from './styles';
 const Favorites: React.FC = () => {
   return (
     <View style={styles.container}>
-      <PageHeader title="Meus proffys favoritos" />
+      <PageHeader title="Meus proffys Favoritos" />
     </View>
   );
 }
