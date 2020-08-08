@@ -55,7 +55,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
         return teacherItem.id === teacher.id;
       });
 
-      favoritesArray.slice(favoriteIndex, 1);
+      favoritesArray.splice(favoriteIndex, 1);
       setIsFavorited(false);
     } else {
       favoritesArray.push(teacher);
