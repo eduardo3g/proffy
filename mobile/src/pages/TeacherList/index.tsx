@@ -3,6 +3,7 @@ import { View, Text, ScrollView } from 'react-native';
 import { TextInput, BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-community/async-storage';
+import { useFocusEffect } from '@react-navigation/native';
 
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
@@ -21,25 +22,31 @@ const TeacherList: React.FC = () => {
   const [week_day, setweekDay] = useState('');
   const [time, setTime] = useState('');
 
-  async function loadFavorites() {
-    await AsyncStorage.getItem('favorites').then(response => {
+  function loadFavorites() {
+    AsyncStorage.getItem('favorites').then(response => {
       if (response) {
         const favoritedTeachers = JSON.parse(response);
         const favoritedTeachersIds = favoritedTeachers.map((teacher: Teacher) => {
           return teacher.id;
-        })
+        });
 
         setFavorites(favoritedTeachersIds);
       }
     });
   }
 
+  useFocusEffect(
+    React.useCallback(() => {
+      loadFavorites();
+    }, [])
+  )
+
   function handleToggleFiltersVisible() {
     setFiltersIsVisible(!isFiltersVisible);
   }
 
   async function handleFiltersSubmit() {
-    await loadFavorites();
+    loadFavorites();
 
     const response = await api.get('/classes', {
       params: {
