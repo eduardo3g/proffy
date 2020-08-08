@@ -22,7 +22,7 @@ Study when and where wish. Proffy is a software developed to connect students an
 - Typescript
 - Axios
 - React Hooks
-- CSS
+- CSS 💅🏽
 - Yarn
 
 ### Mobile 📱
@@ -58,7 +58,7 @@ Just wait a few seconds to build then you're done ✅ Hope you enjoy it.
 
 # Preview
 
-## Web
+## Web 🖥️
 <p align="center">
   <img src="./.github/preview-web-landing.png" alt="Landing page preview" />
   <img src="./.github/preview-web-teachers.png" alt="Teachers list page preview" />
@@ -66,11 +66,11 @@ Just wait a few seconds to build then you're done ✅ Hope you enjoy it.
   <img src="./.github/preview-web-give-classes-2.png" alt="Give classses page second preview" />
 </p>
 
-## Mobile
+## Mobile 📱
 <p align="center">
   <img src="./.github/preview-mobile-landing.jpeg" alt="Landing page mobile preview" />
   <img src="./.github/preview-mobile-teachers.jpeg" alt="Teachers list page mobile preview" />
 </p>
 
-# Thank you!
+# Thank you! 🙋🏽
 Made with love by <a target="_blank" href="https://www.linkedin.com/in/eduscaramella/">@eduardo3g</a>. Hope you appreciate it 🔥
