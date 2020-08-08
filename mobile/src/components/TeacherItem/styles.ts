@@ -102,8 +102,8 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontFamily: 'Archivo_700Bold',
     fontSize: 16,
-    marginLeft: 16
-  }
+    marginLeft: 16,
+  },
 });
 
 export default styles;
