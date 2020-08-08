@@ -1,19 +1,23 @@
-<!-- <p align="center">
-  <img alt="Nubank Logo" title="Nubank" src="./.github/nubank-logo.png" width="200px" />
-</p> -->
+<p align="center">
+  <img alt="Proffy Logo" title="Proffy" src="./.github/landing.png" />
+</p>
 
-Proffy is a software developed to connect studens and teachers all over the world 🌍
+<h1 align="center">
+  Proffy 👨🏽‍🏫
+</h1>
+
+Study when and where wish. Proffy is a software developed to connect students and teachers all over the world 🌍
 
 ## Technologies
 
-### Back-End
+### Back-End 💻
 - Express.js
 - Typescript
 - Knex
 - SQLite3
 - Yarn
 
-### Web
+### Web ⚛️
 - ReactJS
 - Typescript
 - Axios
@@ -21,14 +25,14 @@ Proffy is a software developed to connect studens and teachers all over the worl
 - CSS
 - Yarn
 
-### Mobile
+### Mobile 📱
 - React Native
 - React Hooks
 - Expo CLI
 - Axios
 - Yarn
 
-# How-To
+# How-To 📚
 Running this application is really simple. First of all you need to clone this repository to you workstation: `https://github.com/eduardo3g/proffy.git`
 
 You're also supposed to have NPM or Yarn installed on your machine, Expo CLI and Expo Client app in your cellphone.
@@ -52,7 +56,22 @@ After scanning the QRCode in your screen the <b>Expo Client</b> app will be open
 <br /><br />
 Just wait a few seconds to build then you're done ✅ Hope you enjoy it.
 
+# Preview
 
-<!-- <p align="center">
-  <img src="./.github/preview.jpg" alt="Nubank clone by eduardo3g" />
-</p> -->
+## Web
+<p align="center">
+  <img src="./.github/preview-web-landing.png" alt="Landing page preview" />
+  <img src="./.github/preview-web-teachers.png" alt="Teachers list page preview" />
+  <img src="./.github/preview-web-give-classes-1.png" alt="Give classses page first preview" />
+  <img src="./.github/preview-web-give-classes-2.png" alt="Give classses page second preview" />
+</p>
+
+## Mobile
+<p align="center">
+  <img src="./.github/preview-mobile-landing.jpeg" alt="Landing page mobile preview" />
+  <img src="./.github/preview-mobile-teachers.jpeg" alt="Teachers list page mobile preview" />
+</p>
+
+<br/>
+<br/>
+Hope you appreciate it 🔥
