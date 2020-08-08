@@ -72,6 +72,5 @@ Just wait a few seconds to build then you're done ✅ Hope you enjoy it.
   <img src="./.github/preview-mobile-teachers.jpeg" alt="Teachers list page mobile preview" />
 </p>
 
-<br/>
-<br/>
-Hope you appreciate it 🔥
+# Thank you!
+Made with love by <a target="_blank" href="https://www.linkedin.com/in/eduscaramella/">@eduardo3g</a>. Hope you appreciate it 🔥
