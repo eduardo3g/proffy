@@ -6,7 +6,7 @@
   Proffy 👨🏽‍🏫
 </h1>
 
-Study when and where wish. Proffy is a software developed to connect students and teachers all over the world 🌍
+Study when and where you wish. Proffy is a software developed to connect students and teachers all over the world 🌍
 
 ## Technologies
 
